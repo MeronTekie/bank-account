@@ -36,6 +36,23 @@ $(document).ready(function () {
       withdraw,
       currentBalance
     );
-    $("#output").text("Your current Balance:" + account.currentBalance);
+    // $("div.1").addClass("hidden");
+    // $("#output").append(" You deposited :" + deposit + "\n");
+    // $("#output").append(" You withdrew :" + withdraw + "\n");
+    // $("#output").append("Your current Balance:" + account.currentBalance);
+    $(".two").show();
+    $(".one").hide();
+
+    $("#output").text(
+      " You deposited :" +
+        deposit +
+        "\n" +
+        " You withdrew :" +
+        withdraw +
+        "\n" +
+        "Your current Balance:" +
+        account.currentBalance
+    );
+    // $("#output").removeClass("two");
   });
 });
